@@ -30,6 +30,9 @@ Assuming the you have already installed Go on your local machine and cloned this
 2. Open 'http://localhost:8080', a message saying that the application is running will be displayed.
 3. 'http://<server>/api/v1/stocks/{symbol}?stock_exchange={stock exchange values}' returns the current stock(s) details.
 
+# Deploying the app
+1. `stock_app` can be compressed and deployed anywhere.
+
 # Tests
 
 Tests are in the 'stocks_test.go' file.
