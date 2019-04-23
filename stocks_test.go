@@ -27,7 +27,7 @@ func TestWithSingleSymbolAndStockExchange(t *testing.T) {
 
 // Executes the test based on the given conditions.
 func executeTest(url string, f func(w http.ResponseWriter, req *http.Request), t *testing.T) {
-	// Create a request to pass to our a handler that manages latest rates API.
+	// Create a request to pass to a handler that manages stocks.
 	req, err := http.NewRequest(http.MethodGet, url, nil)
 	if err != nil {
 		t.Fatal(err)
