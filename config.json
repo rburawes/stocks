@@ -1,0 +1,6 @@
+{
+  "url": "https://www.worldtradingdata.com/api/v1/stock?symbol=%s&api_token=%s",
+  "urlWithSorting": "https://www.worldtradingdata.com/api/v1/stock?symbol=%s&api_token=%s&sort_order=%s&sort_by=%s",
+  "urlWithSortingAndOutput": "https://www.worldtradingdata.com/api/v1/stock?symbol=%s&api_token=%s&sort_order=%s&sort_by=%s&output=%s",
+  "apiToken": "quukNET3UTsSfSyGIKdRz8Ic8IYAH9It7HwlJKzDwX8hpgWEpcbQGBmnjuN4"
+}
