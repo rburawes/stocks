@@ -8,33 +8,33 @@ This application utilises the World Trading Data API to display the stocks price
    
    e.g. 
    
-   - http://<server>/api/v1/stocks/AAPL?stock_exchange=NASDAQ
-   - http://<server>/api/v1/stocks/NOG,AAPL?stock_exchange=AMEX,NASDAQ
-   - http://<server>/api/v1/stocks/NOG,AAPL
+   - `http://<server>/api/v1/stocks/AAPL?stock_exchange=NASDAQ`
+   - `http://<server>/api/v1/stocks/NOG,AAPL?stock_exchange=AMEX,NASDAQ`
+   - `http://<server>/api/v1/stocks/NOG,AAPL`
 
    
 # The application flow
 
-1. Application starts with the file 'main.go'
+1. Application starts with the file `main.go`
 2. The first time the application runs, it loads the content of the config.json (contains property details like url, token etc).
-3. 'main.go' calls 'LoadRoutes' from 'routes' package to prepare the application for handling request and response.
-4. 'routes/routes.go' defines all the paths that the application can serve and accept.
-5. 'controllers/web.go' handles the processing of the web request and response. 
+3. `main.go` calls `LoadRoutes` from `routes` package to prepare the application for handling request and response.
+4. `routes/routes.go` defines all the paths that the application can serve and accept.
+5. `controllers/web.go` handles the processing of the web request and response. 
 
 # Running the app
 
-The binary file is available in the 'stock_app' directory.
+The binary file is available in the `stock_app` directory.
 
-1. Go to 'stock_app' directory and execute './stocks'
-2. Open 'http://localhost:8080', a message indicates that the application is running will be displayed.
-3. Hit 'http://<server>/api/v1/stocks/{symbol}?stock_exchange={stock exchange values}' via browser or curl.
+1. Go to `stock_app` directory and execute `./stocks`
+2. Open `http://localhost:8080`, a message indicates that the application is running will be displayed.
+3. Hit `http://<server>/api/v1/stocks/{symbol}?stock_exchange={stock exchange values}` via browser or curl.
 
 # Deploying the app
 1. `stock_app` can be compressed and deployed anywhere.
 
 # Tests
 
-Tests are in the 'stocks_test.go' file.
+Tests are in the `stocks_test.go` file.
 
 ```
 $ go test -v
