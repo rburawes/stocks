@@ -3,9 +3,8 @@
 This application utilises the World Trading Data API to display the stocks prices based on the provided symbol and stock exchange.
 
 1. Reads JSON response file from `https://www.worldtradingdata.com/api/v1/stock?symbol={symbol}&api_token={token}`.
-2. Select the stocks that are in the stock exchange
-3. Return the filtered result.
-4. The data can be accessed through `http://<server>/api/v1/stocks/{symbol}?stock_exchange={stock exchange values}`
+2. Select the stocks based on the stock exchange query param and return the filtered result.
+3. The data can be accessed through `http://<server>/api/v1/stocks/{symbol}?stock_exchange={stock exchange values}`
    
    e.g. 
    
@@ -24,11 +23,11 @@ This application utilises the World Trading Data API to display the stocks price
 
 # Running the app
 
-Assuming the you have already installed Go on your local machine and cloned this project.
+The binary file is available in the 'stock_app' directory.
 
 1. Go to 'stock_app' directory and execute './stocks'
-2. Open 'http://localhost:8080', a message saying that the application is running will be displayed.
-3. 'http://<server>/api/v1/stocks/{symbol}?stock_exchange={stock exchange values}' returns the current stock(s) details.
+2. Open 'http://localhost:8080', a message indicates that the application is running will be displayed.
+3. Hit 'http://<server>/api/v1/stocks/{symbol}?stock_exchange={stock exchange values}' via browser or curl.
 
 # Deploying the app
 1. `stock_app` can be compressed and deployed anywhere.
